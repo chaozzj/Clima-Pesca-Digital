@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.climapesca.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Clima Pesa Digital</name>
+    <name>Clima Pesca Digital</name>
     <description>
         Iniciativa de la Organización del Sector Pesquero y Acuícola.
     </description>
@@ -9,13 +9,13 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <icon src="icon.png" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="icon.png" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="StatusBarOverlaysWebView" value="false" />
