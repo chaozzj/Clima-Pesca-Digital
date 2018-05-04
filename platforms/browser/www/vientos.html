@@ -42,28 +42,29 @@
 			<div class="menu">
 				<em class="menu-divider">Navegación<i class="fa fa-navicon"></i></em>
 				<a class="menu-item active-item" href="index.html"><i class="font-15 fa color-night-light fa-home"></i><strong>Inicio</strong></a>
-				<a class="menu-item" data-submenu="sub-1" href="#"><i class="font-13 fa color-night-light fa-info-circle"></i><strong>Autoridad</strong></a>
+				<a class="menu-item" data-submenu="sub-1" href="#"><i class="font-13 fa color-night-light fa-file"></i><strong>Autoridad</strong></a>
 				<div id="sub-1" class="submenu-item">
-					<a href="#">Equipo Técnico</a>
+					<a href="equipo.html">Equipo Técnico</a>
 				</div>
-				<a class="menu-item" data-submenu="sub-2" href="#"><i class="font-13 fa color-night-light fa-file"></i><strong>Información Disponible</strong></a>
+				<a class="menu-item" data-submenu="sub-2" href="#"><i class="font-13 fa color-night-light fa-info-circle"></i><strong>Información Disponible</strong></a>
 				<div id="sub-2" class="submenu-item">
 					<a href="#">Avances</a>
 					<a href="#">Análisis Semanal</a>
-					<a href="#">Vientos</a>
-					<a href="#">Clorofila</a>
-					<a href="#">Probabilidad de Formación de Ciclones a 2 Dias</a>
-					<a href="#">Fases de la Luna</a>
-					<a href="#">Meteorología y Oceonografía</a>
-					<a href="#">Oleaje</a>
-					<a href="#">Corrientes Marinas</a>
-					<a href="#">Presión Atmosférica</a>
+					<a href="vientos.html">Vientos</a>
+					<a href="clorofila.html">Clorofila</a>
+					<a href="#">Prob. de For. de Ciclones a 2 Dias</a>
+					<a href="fases.html">Fases de la Luna</a>
+					<a href="meteorolgia.html">Meteorología y Oceonografía</a>
+					<a href="oleaje.html">Oleaje</a>
+					<a href="corrientes.html">Corrientes Marinas</a>
+					<a href="presion.html">Presión Atmosférica</a>
 				</div>
-				<a class="menu-item" href="menu.html"><i class="font-14 fa color-night-light fa-envelope"></i><strong>Contáctenos</strong></a>
+				<a class="menu-item" href="#"  data-deploy-menu="menu-4"><i class="font-14 fa color-night-light fa-envelope"></i><strong>Contáctenos</strong></a>
 			</div>
 		</div>
 	</div>
 <!--End Header-->
+
 
 <!--Content-->
 	<div id="page-content" class="page-content">	
@@ -261,37 +262,37 @@
 			<div class="contact-form">
 				<div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
 					<p class="center-text full-bottom full-top"><i class="fa fa-2x fa-paper-plane-o"></i></p>
-					<h4 class="uppercase ultrabold half-bottom center-text">Message Sent</h4>
+					<h4 class="uppercase ultrabold half-bottom center-text">Mensaje enviado</h4>
 					<p class="center-text boxed-text half-bottom">
-						We usually reply in less than 24 hours. <br/> Thank you for getting in touch with us!
+						Generalmente respondemos en un lapso no mayor a 24 horas. <br/> Gracias por contactarnos.
 					</p>
-					<a href="#" class="button button-round color-white button-blue button-xs button-center close-menu uppercase bold full-bottom full-top">Return to Site</a>
+					<a href="#" class="button button-round color-white button-blue button-xs button-center close-menu uppercase bold full-bottom full-top">Volver</a>
 				</div>
 				<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
 					<fieldset>
 						<div class="menu-contact-title half-top">
-							<h4>Let's get in Touch</h4>
-							<h5 class="full-bottom">Get in touch with us. Send us a message and we'll get back to you in the shortest possible time!</h5>
+							<h4>Contáctenos</h4>
+							<h5 class="full-bottom">Estaremos en contacto contigo proximamente.</h5>
 						</div>
-						<div class="formValidationError" id="contactNameFieldError">Name is required!</div>
-						<div class="formValidationError" id="contactEmailFieldError">Mail address required!</div>
-						<div class="formValidationError" id="contactEmailFieldError2">Mail address must be valid!</div>
+						<div class="formValidationError" id="contactNameFieldError">Nombre es requerido.</div>
+						<div class="formValidationError" id="contactEmailFieldError">Correo es requerido</div>
+						<div class="formValidationError" id="contactEmailFieldError2">Dirección de correo no válida</div>
 						<div class="formValidationError" id="contactMessageTextareaError"></div>
 						<div class="formFieldWrap">
 							<label class="field-title contactNameField" for="contactNameField"></label>
-							<input type="text" name="contactNameField" placeholder="John Doe" value="" class="contactField requiredField" id="contactNameField" />
+							<input type="text" name="contactNameField" placeholder="Nombre" value="" class="contactField requiredField" id="contactNameField" />
 						</div>
 						<div class="formFieldWrap">
 							<label class="field-title contactEmailField" for="contactEmailField"></label>
-							<input type="text" name="contactEmailField" placeholder="mail@domain.com" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
+							<input type="text" name="contactEmailField" placeholder="Correo Electrónico" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
 						</div>
 						<div class="clear"></div>
 						<div class="formTextareaWrap half-bottom">
 							<label class="field-title contactMessageTextarea" for="contactMessageTextarea"></label>
-							<textarea name="contactMessageTextarea" placeholder="Enter your message here." class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+							<textarea name="contactMessageTextarea" placeholder="Cuerpo del mensaje." class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
 						</div>
 						<div class="contactFormButton">
-							<input type="submit" class="buttonWrap contactSubmitButton" id="contactSubmitButton" value="Send Message" data-formId="contactForm" />
+							<input type="submit" class="buttonWrap contactSubmitButton" id="contactSubmitButton" value="Enviar Mensaje" data-formId="contactForm" />
 						</div>
 					</fieldset>
 				</form>
