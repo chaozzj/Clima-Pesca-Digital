@@ -18,3 +18,28 @@ $(document).ready(function()
     }
 });;
  });
+
+
+$(document).bind( "mobileinit", function() {
+    $.ajax({
+        // Variables
+        url: 'https://climapesca.org/app-core/app-mail.php',
+        type: 'POST',
+        data: {
+            email: $('#email').val()
+            mesbody: $('#message').val()
+
+        }
+    // Fonction HTML
+    }, function(html) {
+        var response = html;
+        // PHP done and email sent
+        if(response == "success") {
+            alert("Email sent !");
+        } else {
+            alert("Email can't been sent...");
+            return false;
+        }
+    });
+    $.mobile.allowCrossDomainPages = true;
+});
