@@ -48,11 +48,11 @@
 				</div>
 				<a class="menu-item" data-submenu="sub-2" href="#"><i class="font-13 fa color-night-light fa-info-circle"></i><strong>Información Disponible</strong></a>
 				<div id="sub-2" class="submenu-item">
-					<a href="#">Avances</a>
-					<a href="#">Análisis Semanal</a>
+					<a href="avances.html">Avances</a>
+					<a href="analsem.html">Análisis Semanal</a>
 					<a href="vientos.html">Vientos</a>
 					<a href="clorofila.html">Clorofila</a>
-					<a href="#">Prob. de For. de Ciclones a 2 Dias</a>
+					<a href="#" onclick= "cordova.InAppBrowser.open('http://climapesca.org/probabilidad-de-formacion-de-ciclones-a-2-dias/','_system'); return false;">Prob. de For. de Ciclones a 2 Dias</a>
 					<a href="fases.html">Fases de la Luna</a>
 					<a href="meteorolgia.html">Meteorología y Oceonografía</a>
 					<a href="oleaje.html">Oleaje</a>
@@ -69,18 +69,34 @@
 	<div id="page-content" class="page-content">	
 		<div id="page-content-scroll"><!--Enables this element to be scrolled --> 			
 			<div class="homepage-cta no-top">
-				<h1 class="half-top center-text no-bottom font-21">Fases de la luna</h1>
+				<h1 class="half-top center-text no-bottom font-21"> Meteorología y oceanografía</h1>
                 <br>
-                <div class="scale-effect">
-					<img src="img/pictures/8w.jpg" data-src="img/pictures/8w.jpg" class="preload-image responsive-image no-bottom">
-					<div class="scale-effect-caption">
-						<strong class="color-white font-15 ultrabold uppercase">Pais</strong>
-						<em class="color-gray-light">Contenido de la info.</em>
-						<div class="overlay overlay-medium"></div>
-					</div>
-				</div>
-                </div>
-			</div>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://climapesca.org/belize-meteorologia-y-oceanografia','_system'); return false;"  class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="Belice.">
+                        <img data-src="img/static/belice.svg" src="img/static/belice.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://miocimar.ucr.ac.cr/oleaje','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="Costa costa-rica.">
+                        <img data-src="img/static/costa-rica.svg" src="img/static/costa-rica.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://climapesca.org/el-salvador-meteorologia-y-oceanografia','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="El Salvador.">
+                        <img data-src="img/static/sv.svg" src="img/static/sv.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://www.insivumeh.gob.gt/meteorologia/bolpro.htm','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="Guatemala.">
+                        <img data-src="img/static/guatemala.svg" src="img/static/guatemala.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://copeco.gob.hn/situacion-actual','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="Honduras.">
+                        <img data-src="img/static/honduras.svg" src="img/static/honduras.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://climapesca.org/nicaragua-meteorologia-y-oceanografia/','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="Nicaragua.">
+                        <img data-src="img/static/nicaragua.svg" src="img/static/nicaragua.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://www.hidromet.com.pa/pronostico_extendido.php','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="Panamá.">
+                        <img data-src="img/static/panama.svg" src="img/static/panama.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>
+                <a href="#" onclick= "cordova.InAppBrowser.open('http://onamet.gov.do/m/','_system'); return false;" class="show-gallery polaroid-effect polaroid-effect-small half-bottom" title="República Dominicana">
+                        <img data-src="img/static/rp.svg" src="img/static/rp.svg" class="preload-image responsive-image no-bottom" alt="Image Unavailable">
+                    </a>    
+            </div>
+		</div>
 <!--End Content-->
 <!--Footer-->
 			<!--
@@ -310,6 +326,7 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">

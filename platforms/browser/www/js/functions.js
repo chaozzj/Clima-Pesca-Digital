@@ -17,7 +17,7 @@ $(document).ready(function()
         $("#posts").append("<li><h1>Error al obtener noticias, compruebe su conexión.</h1></li>");
     }
 });;
- });
+});
 
 
 $(document).bind( "mobileinit", function() {
