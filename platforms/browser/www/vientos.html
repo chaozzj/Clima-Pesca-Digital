@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/framework.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
 </head>
 <body>
 <!--Header-->
@@ -21,7 +22,7 @@
 	
 <div id="page-transitions">
 	<div id="header" class="header-logo-left header-dark">
-		<a href="index.html" class="header-logo"></a>
+		<a href="#" onclick="navigatepage('index.html')"class="header-logo"></a>
 		<a href="#" class="header-icon header-icon-1 hamburger-animated" data-deploy-menu="menu-1"></a>
 		<a href="#" class="header-icon header-icon-2 font-14" data-deploy-menu="menu-4"><i class="fa fa-envelope-o"></i></a>
 		<a href="#" class="header-icon header-icon-3 font-13 no-border" data-deploy-menu="menu-2"><i class="fa fa-bell-o font-12"></i></a>
@@ -44,20 +45,20 @@
 				<a class="menu-item active-item" href="index.html"><i class="font-15 fa color-night-light fa-home"></i><strong>Inicio</strong></a>
 				<a class="menu-item" data-submenu="sub-1" href="#"><i class="font-13 fa color-night-light fa-file"></i><strong>Autoridad</strong></a>
 				<div id="sub-1" class="submenu-item">
-					<a href="equipo.html">Equipo Técnico</a>
+					<a href="#" onclick="navigatepage('equipo.html')">Equipo Técnico</a>
 				</div>
 				<a class="menu-item" data-submenu="sub-2" href="#"><i class="font-13 fa color-night-light fa-info-circle"></i><strong>Información Disponible</strong></a>
 				<div id="sub-2" class="submenu-item">
-					<a href="avances.html">Avances</a>
-					<a href="analsem.html">Análisis Semanal</a>
-					<a href="vientos.html">Vientos</a>
-					<a href="clorofila.html">Clorofila</a>
+					<a href="#" onclick="navigatepage('avances.html')">Avances</a>
+					<a href="#" onclick="navigatepage('analsem.html')">Análisis Semanal</a>
+					<a href="#" onclick="navigatepage('vientos.html')">Vientos</a>
+					<a href="#" onclick="navigatepage('clorofila.html')">Clorofila</a>
 					<a href="#" onclick= "cordova.InAppBrowser.open('http://climapesca.org/probabilidad-de-formacion-de-ciclones-a-2-dias/','_system'); return false;">Prob. de For. de Ciclones a 2 Dias</a>
-					<a href="fases.html">Fases de la Luna</a>
-					<a href="meteorolgia.html">Meteorología y Oceonografía</a>
-					<a href="oleaje.html">Oleaje</a>
-					<a href="corrientes.html">Corrientes Marinas</a>
-					<a href="presion.html">Presión Atmosférica</a>
+					<a href="#" onclick="navigatepage('fases.html')">Fases de la Luna</a>
+					<a href="#" onclick="navigatepage('meteorolgia.html')">Meteorología y Oceonografía</a>
+					<a href="#" onclick="navigatepage('oleaje.html')">Oleaje</a>
+					<a href="#" onclick="navigatepage('corrientes.html')">Corrientes Marinas</a>
+					<a href="#" onclick="navigatepage('presion.html')">Presión Atmosférica</a>
 				</div>
 				<a class="menu-item" href="#"  data-deploy-menu="menu-4"><i class="font-14 fa color-night-light fa-envelope"></i><strong>Contáctenos</strong></a>
 			</div>
@@ -310,4 +311,9 @@
 <script type="text/javascript">
         app.initialize();
 </script>
+<script type="text/javascript">	
+		function navigatepage($pagename){
+	                  window.location = $pagename;
+	}
+	</script>
 </body>
