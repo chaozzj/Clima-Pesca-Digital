@@ -22,10 +22,7 @@
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <plugin name="cordova-plugin-camera" spec="~4.0.3" >
-         <param name="CAMERA_USAGE_DESCRIPTION" value="Soon we will add recognition features" />
-         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="The user will be able to store captures of the current status in the maps obtained directly from the app" />
-    <plugin/>
+    <plugin name="cordova-plugin-camera" spec="~4.0.3" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -74,6 +71,9 @@
         <splash height="1024" platform="ios" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
+        <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="overwrite">
+    <string>Soon we will add recognition features, The user will be able to store captures of the current status in the maps obtained directly from the app</string>
+</edit-config>
     </platform>
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
