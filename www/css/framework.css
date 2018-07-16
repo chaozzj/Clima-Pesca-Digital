@@ -2554,9 +2554,9 @@ input[type="range"]::-webkit-slider-thumb:after{
 	left:0px;
 	right:0px;
 	bottom:0px;
-	width:250px;
+	width:300px;
 	z-index:999;
-	transform:translateX(-270px);
+	transform:translateX(-300px);
 	transition:all 450ms ease;
 }
 
@@ -2577,7 +2577,7 @@ input[type="range"]::-webkit-slider-thumb:after{
 	bottom:0px;
 	width:70px;
 	z-index:999;
-	transform:translateX(-70px);
+	transform:translateX(-100px);
 	transition:all 450ms ease;
 }
 
@@ -2585,9 +2585,9 @@ input[type="range"]::-webkit-slider-thumb:after{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	width:250px;
+	width:300px;
 	z-index:999;
-	transform:translateX(270px);
+	transform:translateX(300px);
 	transition:all 450ms ease;
 }
 
