@@ -25,10 +25,7 @@
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.3" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <plugin name="cordova-plugin-camera" spec="~4.0.3">
-	<param name="CAMERA_USAGE_DESCRIPTION" value="Soon we will add recognition features, The user will be able to store captures of the current status in the maps obtained directly from the app and read QR codes for tracking" />
-   	<param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="need to access photo library to get pictures from there" />
-    </plugin>
+    <plugin name="cordova-plugin-camera" spec="~4.0.3"/>
 	<platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -80,10 +77,10 @@
         
     </platform>
 
-<config-file platform="ios" parent="NSCameraUsageDescription" target="*-Info.plist"  mode="replace" >
+<config-file platform="ios" parent="NSCameraUsageDescription" target="*-Info.plist"  mode="replace" overwrite="true">
     <string>Soon we will add recognition features, The user will be able to store captures of the current status in the maps obtained directly from the app and read QR codes for tracking</string>
 </config-file>
-<edit-config platform="ios" parent="NSPhotoLibraryUsageDescription" target="*-Info.plist" mode="replace">
+<edit-config platform="ios" parent="NSPhotoLibraryUsageDescription" target="*-Info.plist" mode="replace" overwrite="true">
 
   <string>need to access photo library to get pictures from there</string>
 
