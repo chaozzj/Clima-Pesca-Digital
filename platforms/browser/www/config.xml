@@ -29,9 +29,10 @@
 <config-file platform="ios" parent="NSCameraUsageDescription" target="*-Info.plist"  mode="replace" overwrite="true">
     <string>Soon we will add recognition features, The user will be able to store captures of the current status in the maps obtained directly from the app and read QR codes for tracking</string>
 </config-file>
-<edit-config platform="ios" parent="NSPhotoLibraryUsageDescription" target="*-Info.plist" mode="replace" overwrite="true">
+
+<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" target="*-Info.plist" mode="replace" overwrite="true">
 
   <string>need to access photo library to get pictures from there</string>
 
-</edit-config>
+</config-file>
 </widget>
